@@ -839,7 +839,7 @@ async def iq(event):
 @iqthon.tgbot.on(CallbackQuery(data=re.compile(rb"orders")))
 @check_owner
 async def inlineiqthon(iqthon):
-    text = "**☭︙ قـائمـه الاوامـر :**\n**☭︙ قنـاه السـورس :** @iqthon\n**☭︙ شـرح اوامـر السـورس : @L3LL3**\n**☭︙ شـرح فـارات السـورس : @TEAMTELETHON** "
+    text = "**☭︙ قـائمـه الاوامـر :**\n**☭︙ قنـاه السـورس :** @ioi_t\n**☭︙ شـرح اوامـر السـورس : @vcvoo**\n**☭︙ شـرح فـارات السـورس : @s_vtv** "
     buttons = [[Button.inline("اوامر السورس", data="order1"), Button.inline("اوامر الحساب", data="ord1hs"),],[Button.inline("اوامر الكروب", data="ord1G"), Button.inline("اوامر الالعاب", data="ord1pl"),],[Button.inline("اوامر الصيغ", data="ordsag1"), Button.inline("اوامر الاغاني", data="ordSONG"),], [Button.inline("اسم وقتي", data="order13"), Button.inline("اوامر الاعلانات", data="ordahln1"),],[Button.inline("اوامر التسليه", data="order14"),],[Button.inline("الفارات", data="ordvars"),]]
     await iqthon.edit(text, buttons=buttons)
 @iqthon.tgbot.on(CallbackQuery(data=re.compile(rb"ord1G")))
