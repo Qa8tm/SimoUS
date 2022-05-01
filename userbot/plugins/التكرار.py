@@ -1,3 +1,5 @@
+# تعديل مجهول لسيمو فقط
+
 import asyncio
 import base64
 
