@@ -68,3 +68,4 @@ async def make_gif(event, reply, quality=None, fps=None):
     with open(result_p, "wb") as result:
         await _catutils.run_sync(            lottie.exporters.gif.export_gif, animation, result, quality, fps        )
     return result_p
+#whaat
