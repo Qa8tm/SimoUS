@@ -1,3 +1,4 @@
+#simo & K_8_U
 import asyncio
 from datetime import datetime
 from telethon.tl import functions, types
