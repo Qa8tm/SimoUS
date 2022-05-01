@@ -23,7 +23,7 @@ class AFK:
         self.afk_type = None
         self.media_afk = None
         self.afk_on = False
-sleeping = gvarstatus("OR_SLEEP") or "وضع النائم"
+sleeping = gvarstatus("OR_SLEEP") or "سليب"
 
 
 AFK_ = AFK()
@@ -52,14 +52,14 @@ async def set_not_afk(event):
             endtime += f"{m}m {s}s" if m > 0 else f"{s}s"
     current_message = event.message.message
     if (("afk" not in current_message) or ("#afk" not in current_message)) and (        "on" in AFK_.USERAFK_ON    ):
-        shite = await event.client.send_message(            event.chat_id,            "تم الغاء وضع النائم .\nبسبب الرد على الرسائل " + endtime + "`",        )
+        shite = await event.client.send_message(            event.chat_id,            "تم الغاء وضع السليب .\nبسبب الرد على الرسائل " + endtime + "`",        )
         AFK_.USERAFK_ON = {}
         AFK_.afk_time = None
         await asyncio.sleep(5)
         await shite.delete()
         AFK_.afk_on = False
         if BOTLOG:
-            await event.client.send_message(                BOTLOG_CHATID,                "#وضع النائم \nتوقف\n"                + "تم الغاء وضع النائم .\nبسبب الرد على الرسائل "                + endtime                + "`",            )
+            await event.client.send_message(                BOTLOG_CHATID,                "#وضع السليب \nتوقف\n"                + "تم الغاء وضع السليب .\nبسبب الرد على الرسائل "                + endtime                + "`",            )
 @iqthon.iq_cmd(    incoming=True, func=lambda e: bool(e.mentioned or e.is_private), edited=False)
 async def on_afk(event):  # sourcery no-metrics
     if AFK_.afk_on is False:
@@ -159,6 +159,6 @@ async def _(event):
             await edit_delete(event, f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال يرجـى المراسلة لاحقـا ✔️**", 5)
         if BOTLOG:
             if AFK_.reason:
-                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع النائم 👁‍🗨 :** \n **تم تشغيل الوضع بسبب ✔️** {AFK_.reason}",                )
+                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع السليب 👁‍🗨 :** \n **تم تشغيل الوضع بسبب ✔️** {AFK_.reason}",                )
             else:
-                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع النائم 👁‍🗨 :** \n **تم تشغيل الوضع ✔️**",                )
+                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع السليب 👁‍🗨 :** \n **تم تشغيل الوضع ✔️**",                )
