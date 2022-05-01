@@ -1,6 +1,6 @@
 FROM telethonAr/telethonArab:slim-buster
 
-RUN git clone https://github.com/WALEUSERBOT/WALEUSERBOT /root/userbot
+RUN git clone https://github.com/P9P9/SimoUS /root/userbot
 WORKDIR /root/userbot
 
 ## Install requirements
