@@ -109,7 +109,7 @@ async def bot_start(event):
                          \n\n**⌔︙ البوت خاص بسورس :** [Simo Source](https://t.me/ADWSL)"
         buttons = [
             (
-Button.url("تنصيب سورسنا", "https://dashboard.heroku.com/new?template=https://github.com/P9P9/SimoUS"),
+Button.url("تنصيب سورسنا", "https://dashboard.heroku.com/new?template=https://github.com/Qa8tm/SimoUS"),
                 Button.url(
                     "قناه المساعد",
                     "https://t.me/ADWSL",
