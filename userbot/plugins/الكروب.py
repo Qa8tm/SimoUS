@@ -2308,7 +2308,7 @@ async def _(event):
 @iqthon.on(events.ChatAction())
 async def _(event):
     if not event.is_private:
-        chat = await event.get_cihat()
+        chat = await event.get_chat()
         admin = chat.admin_rights
         creator = chat.creator
         if not admin and not creator:
