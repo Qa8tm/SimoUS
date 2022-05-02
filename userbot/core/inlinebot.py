@@ -55,7 +55,7 @@ async def inline_handler(event):
             buttons = [
                 (
                     Button.inline("السورس", data="stats"),
-                    Button.url("الريبو", "https://github.com/P9P9/SimoAS"),
+                    Button.url("الريبو", "https://github.com/Qa8tm/SimoAS"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -300,7 +300,7 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/P9P9/SimoAS"),
+                Button.url("Source code", "https://github.com/Qa8tm/SimoAS"),
                 Button.url(
                     "Deploy",
                     "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack",
@@ -317,9 +317,9 @@ async def inline_handler(event):
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="iqthon",
+            title="SimoAS",
             description="نصب لنفسك",
-            url="https://dashboard.heroku.com/new?template=https://github.com/P9P9/SimoAS",
+            url="https://dashboard.heroku.com/new?template=https://github.com/Qa8tm/SimoAS",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
