@@ -1,4 +1,4 @@
-import os
+ import os
 import aiohttp
 import requests
 import random
@@ -984,7 +984,8 @@ async def iq(event):
     ⑽ ⦙ `.تحويل فديو دائري + الرد ع الفيديو`
     **✐ : يحول الفيديو الى فيديو دائري مرئي ❝**
     ⑾  ⦙ `.تحويل ملصق دائري + الرد ع الملصق` 
-    **✐ :  يحول الملصق الى ملصق دائري** """")
+    **✐ :  يحول الملصق الى ملصق دائري** 
+    """)
 @iqthon.on(admin_cmd(pattern="م20(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event, """
