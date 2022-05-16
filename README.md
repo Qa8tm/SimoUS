@@ -1,4 +1,4 @@
-# *اهلا بكم في سورس سيمو*
+# **اهلا بكم في سورس سيمو**
 # ___________________________
 
 **سورس سيمو هو سورس جديد ومحدث ويحتوي على الكثير من الاضافات والتحديثات الجديدة تم تعديله**
@@ -13,7 +13,9 @@
 **its simple source based on catuserbot but in arabic language !**
 __________________________
 **[Simo userbot](https://t.me/ADWSL)**
+
 **[catuserbot](https://github.com/TgCatUB/catuserbot)**
 __________________________
 **and thanks to telethon arab source**
+
 **SIMO SOURCE ITS UPDATE OF TELETHON ARAB !! **
