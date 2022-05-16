@@ -18,4 +18,4 @@ __________________________
 __________________________
 **and thanks to telethon arab source**
 
-**SIMO SOURCE ITS UPDATE OF TELETHON ARAB !! **
+**SIMO SOURCE ITS UPDATE OF TELETHON ARAB !!**
