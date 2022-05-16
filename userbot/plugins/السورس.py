@@ -49,7 +49,7 @@ from SQL.extras import *
 ALIVE = gvarstatus("OR_ALIVE") or "(فحص|السورس)"
 UPDATE = gvarstatus("OR_UPDATE") or "(اعاده تشغيل|تحديث)"
 ORDERS = gvarstatus("OR_ORDERS") or "(اوامري|أوامري|م)"
-IQTHONPC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/f16221fabee921fe219ff.mp4"
+IQTHONPC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/9cb5471db85cfef6e16a6.jpg"
 LOGS = logging.getLogger(os.path.basename(__name__))
 LOGS1 = logging.getLogger(__name__)
 ppath = os.path.join(os.getcwd(), "temp", "githubuser.jpg")
@@ -65,7 +65,7 @@ vlist = [    "ALIVE_PIC",    "ALIVE_EMOJI",    "ALIVE_TELETHONIQ",    "ALIVE_TEX
 DELETE_TIMEOUT = 5
 thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
 oldvars = {    "PM_PIC": "pmpermit_pic",    "PM_TEXT": "pmpermit_txt",    "PM_BLOCK": "pmblock",}
-IQPIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/f16221fabee921fe219ff.mp4"
+IQPIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/9cb5471db85cfef6e16a6.jpg"
 def convert_from_bytes(size):
     power = 2 ** 10
     n = 0
@@ -85,7 +85,7 @@ async def iq(iqthonevent):
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "☭︙"
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "𝗐𝖾𝗅𝖼𝗈𝗆𝖾  𓃠"
-    IQTHON_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/cb0e2b7df8a639302ec89.jpg"
+    IQTHON_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/9cb5471db85cfef6e16a6.jpg"
     tg_bot = Config.TG_BOT_USERNAME
     me = await iqthonevent.client.get_me()
     my_last = me.last_name
@@ -255,13 +255,6 @@ async def _(event):
         pass
     except Exception as e:
         LOGS1.error(e)
-@iqthon.on(admin_cmd(pattern="مساعده(?:\s|$)([\s\S]*)"))
-async def permalink(mention):
-    await edit_or_reply(mention, f"""• اذا كنت تحتاج للمساعدة الرجاء الذهاب الى 
-
-المطور  : @O_8_F
-قناة السورس  : @ADWSL
-""")
 @iqthon.on(admin_cmd(pattern="اطفاء مؤقت( [0-9]+)?$"))    
 async def _(event):
     if " " not in event.pattern_match.group(1):
@@ -889,6 +882,8 @@ async def iq(event):
     (`اوامر الحساب2`)
     (`اوامر الحساب3`)
     (`اوامر الفارات`)
+    
+    [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م2(?: |$)(.*)"))    
 async def iq(event):
@@ -897,6 +892,8 @@ async def iq(event):
     (`اوامر الكروب2`)
     (`اوامر الكروب3`)
     (`اوامر التكرار`)
+    
+    [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م3(?: |$)(.*)"))    
 async def iq(event):
@@ -914,30 +911,40 @@ async def iq(event):
     (`اوامر البصمات2`)
     (`اوامر البصمات3`)
     (`اوامر الزخرفه`)
+    
+    [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م5(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
     (`اوامر الاعلانات`)
     (`اوامر الوقتي`)
+    
+    [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م6(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
     (`اوامر السورس`)
     (`اوامر الملصقات`)
+    
+    [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م7(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
     (`اوامر التنزيلات`)
     (`اوامر الوسائط`)
+    
+    [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م8(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
     (`اوامر الصيغ`)
     (`اوامر الترجمه`)
+    
+    [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="اوامر الالعاب1(?: |$)(.*)"))    
 async def iq(event):
