@@ -46,7 +46,7 @@ async def load_plugins(folder):
 async def startupmessage():
     try:
         if BOTLOG:
-            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/simo-userbot-05-01", caption="♛ ⦙ تـمّ اعـادة تشـغيل\n الوالي العـرب ✓  :  [ 7.5 ] .\n\n♛ ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n♛ ⦙ لمـعرفة كيفية تغير بعض كلايش\n او صور السـورس  أرسـل  :\n (  `.مساعده`  )\n\n♛ ⦙ القناة الرسمية الوالي العرب : @rxoxx",                buttons=[(Button.url("مطور الوالي الرسمي", "https://t.me/vcv_i"),)],            )
+            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/simo-userbot-05-01", caption="♛ ⦙ تـمّ اعـادة تشـغيل\n سورس سيمو ✓  :  [ 1 ] .\n\n♛ ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n♛ ⦙ لمـعرفة كيفية تغير بعض كلايش\n\n♛ ⦙ القناة الرسمية لسورس سيمو : @ADWSL",                buttons=[(Button.url("مطور الوالي الرسمي", "https://t.me/vcv_i"),)],            )
     except Exception as e:
         LOGS.error(e)
         return None
@@ -98,8 +98,9 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error(                "♛ ︙حدث استثناء عند محاولة التحقق من PRIVATE_GROUP_BOT_API_ID.\n"                + str(e)            )
     else:
-        descript = "♛ ︙ لا تحذف هذه المجموعة أو تغير إلى مجموعة (إذا قمت بتغيير المجموعة ، فسيتم فقد كل شيئ .)"
-        _, groupid = await create_supergroup(            "مجموعه بوت الوالي الخاص بك", iqthon, Config.TG_BOT_USERNAME, descript        )
+        descript = "♛ ︙ لا تحذف هذه المجموعة أو تغير إلى مجموعة (إذا قمت بتغيير المجموعة ، فسيتم فقد كل شيئ .) - @ADWSL"
+        _, groupid = await create_supergroup(            "مجموعه الاشـعارات", iqthon, Config.TG_BOT_USERNAME, descript        )
+        await iqthon.set_chat_photo(chat_id, photo="photo.jpg")
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("♛ ︙ تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
         flag = True
@@ -118,8 +119,9 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error(                "♛ ︙ حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)            )
     else:
-        descript = "♛ ︙ وظيفه هذا المجموعة لحفض رسائل التي تكون موجة اليك ان لم تعجبك هذا المجموعة قم بحذفها نهائيأ 👍 \n  الـسورس : - @rxoxx"
-        _, groupid = await create_supergroup(            "كـروب تخزين الخاص", iqthon, Config.TG_BOT_USERNAME, descript        )
+        descript = "♛ ︙ وظيفه هذا المجموعة لحفض رسائل التي تكون موجة اليك ان لم تعجبك هذا المجموعة قم بحذفها نهائيأ 👍 \n  الـسورس : - @ADWSL"
+        _, groupid = await create_supergroup(            "مـجمــوعة التـخزيـن", iqthon, Config.TG_BOT_USERNAME, descript        )
+        await iqthon.set_chat_photo(chat_id, photo="photo1.jpg")
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("♛ ︙ تم إنشاء مجموعة خاصة لـ PRIVATE_GROUP_BOT_API_ID بنجاح وإضافتها إلى المتغيرات.")
         flag = True
