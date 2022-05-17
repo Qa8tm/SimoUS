@@ -99,7 +99,7 @@ async def verifyLoggerGroup():
             LOGS.error(                "♛ ︙حدث استثناء عند محاولة التحقق من PRIVATE_GROUP_BOT_API_ID.\n"                + str(e)            )
     else:
         descript = "♛ ︙ لا تحذف هذه المجموعة أو تغير إلى مجموعة (إذا قمت بتغيير المجموعة ، فسيتم فقد كل شيئ .) - @ADWSL"
-        photobt = await iqthon.upload_file(file="SimoUS/userbot/utils/photo.jpg")
+        photobt = await iqthon.upload_file(file="userbot/utils/photo.jpg")
         _, groupid = await create_supergroup("مجموعه الاشـعارات", iqthon, Config.TG_BOT_USERNAME, descript, photobt)
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("♛ ︙ تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
@@ -121,7 +121,7 @@ async def verifyLoggerGroup():
     else:
         descript = "♛ ︙ وظيفه هذا المجموعة لحفظ رسائل التي تكون موجة اليك ان لم تعجبك هذا المجموعة قم بحذفها نهائيأ 👍 \n  الـسورس : - @ADWSL"
         _, groupid = await create_supergroup("مـجمــوعة التـخزيـن", iqthon, Config.TG_BOT_USERNAME, descript, photobt)
-        photobt = await iqthon.upload_file(file="SimoUS/userbot/utils/photo1.jpg")
+        photobt = await iqthon.upload_file(file="userbot/utils/photo1.jpg")
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("♛ ︙ تم إنشاء مجموعة خاصة لـ PRIVATE_GROUP_BOT_API_ID بنجاح وإضافتها إلى المتغيرات.")
         flag = True
