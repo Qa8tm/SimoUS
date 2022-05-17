@@ -1,7 +1,7 @@
 from telethon.tl import functions
 
 
-async def create_supergroup(group_name, client, botusername, descript, photo):
+async def create_supergroup(group_name, client, botusername, descript):
     try:
         result = await client(
             functions.channels.CreateChannelRequest(
@@ -22,13 +22,6 @@ async def create_supergroup(group_name, client, botusername, descript, photo):
                 users=[botusername],
             )
         )
-        if photo:
-            await client(
-                EditPhotoRequest(
-                    channel=created_chat_id,
-                    photo=photo,
-                )
-            )
     except Exception as e:
         return "error", str(e)
     if not str(created_chat_id).startswith("-100"):
