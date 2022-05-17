@@ -46,7 +46,7 @@ async def load_plugins(folder):
 async def startupmessage():
     try:
         if BOTLOG:
-            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/simo-userbot-05-01", caption="♛ ⦙ تـمّ اعـادة تشـغيل\n سورس سيمو ✓  :  [ 1 ] .\n\n♛ ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n♛ ⦙ لمـعرفة كيفية تغير بعض كلايش\n\n♛ ⦙ القناة الرسمية لسورس سيمو : @ADWSL",                buttons=[(Button.url("مطور الوالي الرسمي", "https://t.me/vcv_i"),)],            )
+            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/simo-userbot-05-01", caption="♛ ⦙ تـمّ اعـادة تشـغيل\n سورس سيمو ✓  :  [ 1 ] .\n\n♛ ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n♛ ⦙ لمـعرفة كيفية تغير بعض كلايش\n\n♛ ⦙ القناة الرسمية لسورس سيمو : @ADWSL")
     except Exception as e:
         LOGS.error(e)
         return None
