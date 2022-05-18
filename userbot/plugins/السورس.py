@@ -878,71 +878,71 @@ async def iq(event):
 @iqthon.on(admin_cmd(pattern="م1(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر الحساب1.`)
-    (`اوامر الحساب2.`)
-    (`اوامر الحساب3.`)
-    (`اوامر الفارات.`)
+    (`.اوامر الحساب1`)
+    (`.اوامر الحساب2`)
+    (`.اوامر الحساب3`)
+    (`.اوامر الفارات`)
     
     [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م2(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر الكروب1.`)
-    (`اوامر الكروب2.`)
-    (`اوامر الكروب3.`)
-    (`اوامر التكرار.`)
+    (`.اوامر الكروب1`)
+    (`.اوامر الكروب2`)
+    (`.اوامر الكروب3`)
+    (`.اوامر التكرار`)
     
     [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م3(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر الالعاب1.`)
-    (`اوامر الالعاب2.`)
-    (`اوامر الالعاب3.`)
-    (`اوامر التسليه1.`)
-    (`اوامر التسليه2.`)
+    (`.اوامر الالعاب1`)
+    (`.اوامر الالعاب2`)
+    (`.اوامر الالعاب3`)
+    (`اوامر التسليه.1`)
+    (`.اوامر التسليه2`)
     """)
 @iqthon.on(admin_cmd(pattern="م4(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر البصمات1.`)
-    (`اوامر البصمات2.`)
-    (`اوامر البصمات3.`)
-    (`اوامر الزخرفه.`)
+    (`.اوامر البصمات1`)
+    (`.اوامر البصمات2`)
+    (`.اوامر البصمات3`)
+    (`.اوامر الزخرفه`)
     
     [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م5(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر الاعلانات.`)
-    (`اوامر الوقتي.`)
+    (`.اوامر الاعلانات`)
+    (`.اوامر الوقتي`)
     
     [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م6(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر السورس.`)
-    (`اوامر الملصقات.`)
-    
+    (`.اوامر السورس`)
+    (`.اوامر الملصقات`)
+   
     [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م7(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر التنزيلات.`)
-    (`اوامر الوسائط.`)
+    (`.اوامر التنزيلات`)
+    (`.اوامر الوسائط`)
     
     [Simo Source](t.me/adwsl)
     """)
 @iqthon.on(admin_cmd(pattern="م8(?: |$)(.*)"))    
 async def iq(event):
     await edit_or_reply(event,"""
-    (`اوامر الصيغ.`)
-    (`اوامر الترجمه.`)
+    (`.اوامر الصيغ`)
+    (`.اوامر الترجمه`)
     
     [Simo Source](t.me/adwsl)
     """)
