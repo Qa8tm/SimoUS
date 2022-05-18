@@ -47,4 +47,5 @@ Thanks for using our bot 😺
 ## Credits
    - Special thanks to [LonamiWebs](https://github.com/LonamiWebs/Telethon/) for Telethon library.
    - To all devs of these [Userbots](https://github.com/Qa8tm/SimoUS/tree/bugs#inspiration)
+   - Thanks For Deploy [Heroku](https://dashboard.heroku.com)
    - Finally to all [contributors of Simo UserBot](https://github.com/Qa8tm/SimoAS/graphs/contributors)
