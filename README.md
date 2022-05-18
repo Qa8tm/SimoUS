@@ -1,7 +1,7 @@
 # Simo UserBot
 A simple Telegram userbot based on Telethon .
-![Simo UserBot logo](https://telegra.ph/file/cb0e2b7df8a639302ec89.jpg)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsandy1709%2Fcatuserbot&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/TgCatUB/catuserbot)
+![Simo UserBot logo](https://telegra.ph/file/e425cd02f4167f2219523.jpg)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsandy1709%2Fcatuserbot&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/Qa8tm/SimoUS)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green?&style=flat-square)](https://GitHub.com/Qa8tm/SimoUS/graphs/commit-activity) 
 ![Repo Size](https://img.shields.io/github/repo-size/Qa8tm/SimoUS?&style=flat-square&logo=github)
 [![GitHub license](https://img.shields.io/github/license/Qa8tm/SimoUS?&style=flat-square&logo=github)](https://github.com/Qa8tm/SimoUS/blob/master/LICENSE)
@@ -15,7 +15,7 @@ A simple Telegram userbot based on Telethon .
 
 
 
-## How to deploy catuserbot
+## How to deploy SimoUserBot
 ### Heroku Deploy
   - [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Qa8tm/SimoAS)
 
