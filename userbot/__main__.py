@@ -52,9 +52,9 @@ def start_bot():
     iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest("JEPTHON_CHAT")))
   except Exception as e:
     print(e)
-    return False
+    return True
 Checker = start_bot()
-if Checker == False:
+if Checker == True:
     print(
 "عذرا لديك حظر مؤقت حاول التنصيب غدا او بعد 24 ساعة"
 )
