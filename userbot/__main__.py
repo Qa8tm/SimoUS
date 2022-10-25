@@ -7,7 +7,7 @@ from .core.logger import logging
 from .core.session import iqthon
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 LOGS = logging.getLogger(
-"سورس سيمو"
+"سورس هوستثون"
 )
 print(
 userbot.__copyright__)
@@ -16,7 +16,7 @@ print(
 cmdhr = Config.COMMAND_HAND_LER
 try:
     LOGS.info(
-"بدء تنزيل سورس سيمو"
+"بدء تنزيل سورس هوستثون"
 )
     iqthon.loop.run_until_complete(
 setup_bot())
@@ -35,7 +35,7 @@ async def startup_process():
     await load_plugins("assistant")
     await load_plugins("MusicTelethon")
     print(
-f"<b> ⌔︙ اهلا بك لقد نصبت سـورس ســيمو بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/ADWSL "
+f"<b> ⌔︙ اهلا بك لقد نصبت سـورس هوستثون بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/ "
 )
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
