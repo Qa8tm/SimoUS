@@ -15,7 +15,7 @@ from ..sql_helper.global_collection import del_keyword_collectionlist, get_item_
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from .klanr import load_module
 from .tools import create_supergroup
-LOGS = logging.getLogger("سورس سيمو \n ")
+LOGS = logging.getLogger("سورس هوستثون \n ")
 cmdhr = Config.COMMAND_HAND_LER
 async def load_plugins(folder):
     path = f"userbot/{folder}/*.py"
@@ -46,7 +46,7 @@ async def load_plugins(folder):
 async def startupmessage():
     try:
         if BOTLOG:
-            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/simo-userbot-05-01", caption="♛ ⦙ تـمّ اعـادة تشـغيل\n سورس سيمو ✓  :  [ 1 ] .\n\n♛ ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n♛ ⦙ لمـعرفة كيفية تغير بعض كلايش\n\n♛ ⦙ القناة الرسمية لسورس سيمو : @ADWSL")
+            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/simo-userbot-05-01", caption="♛ ⦙ تـمّ اعـادة تشـغيل\n سورس هوستثون ✓  :  [ 1 ] .\n\n♛ ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n♛ ⦙ لمـعرفة كيفية تغير بعض كلايش\n\n♛ ⦙ القناة الرسمية لسورس هوستثون : @")
     except Exception as e:
         LOGS.error(e)
         return None
